@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">简易输入法</string>
+    <string name="input_method_name">@string/app_name</string>
+
+    <string name="ic_number">\ue660</string>
+    <string name="ic_cancel">\ue6fe</string>
+    <string name="ic_voice">\ue649</string>
+    <string name="ic_settings">\ue604</string>
+    <string name="ic_shift">\ue628</string>
+    <string name="ic_expression">\ue681</string>
+    <string name="ic_keyboard">\ue670</string>
+    <string name="ic_chinese">\ue712</string>
+    <string name="ic_clear">\ue620</string>
+    <string name="ic_fold">\ue635</string>
+    <string name="ic_caret">\ue616</string>
+    <string name="ic_return">\ue7f5</string>
+    <string name="ic_symbol">\ue73f</string>
+    <string name="ic_space">\ueb62</string>
+    <string name="ic_return_back">\ue61f</string>
+    <string name="ic_lock">\ue76f</string>
+
+</resources>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:showDividers="middle"
+    android:divider="@drawable/vspacing"
+    android:padding="@dimen/keyboard_padding">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <!--:-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:text=":"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:layout_weight="@integer/non_number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--.-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="@integer/non_number_btn_layout_weight"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:text="."/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--1-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--2-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--3-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--delete-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:fontFamily="@font/icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ic_clear"
+            app:keyType="delete"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:layout_weight="@integer/non_number_btn_layout_weight_bigger"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <!--*-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:layout_weight="@integer/non_number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--(-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="@integer/non_number_btn_layout_weight"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:text="("/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--4-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--5-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--6-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--回车键-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/icons"
+            android:text="@string/ic_return"
+            app:keyType="newline"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:layout_weight="@integer/non_number_btn_layout_weight_bigger"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <!--/-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:layout_weight="@integer/non_number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--)-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:layout_weight="@integer/non_number_btn_layout_weight"
+            android:text=")"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--7-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--8-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--9-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--空格键-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/icons"
+            android:text="@string/ic_space"
+            android:layout_weight="@integer/non_number_btn_layout_weight_bigger"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            app:keyType="space"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--跳转到符号键盘-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/icons"
+            android:text="@string/ic_symbol"
+            app:keyType="to_symbol"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:layout_weight="@integer/non_number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--=-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="@integer/non_number_btn_layout_weight"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:text="="/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--加号-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--0-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--减号-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:layout_weight="@integer/number_btn_layout_weight"/>
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/space_width_bigger"
+            android:layout_height="0dp" />
+        <!--返回到主键盘-->
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/icons"
+            android:text="@string/ic_return_back"
+            app:keyType="return_back"
+            android:background="@drawable/keybutton_background_pressed"
+            android:textColor="@color/white"
+            android:layout_weight="@integer/non_number_btn_layout_weight_bigger"/>
+    </LinearLayout>
+</LinearLayout>

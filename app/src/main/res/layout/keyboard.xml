@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray">
+
+    <!--记录按下的按钮-->
+    <TextView
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:id="@+id/pressed_key_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--工具栏-->
+    <LinearLayout
+        android:id="@+id/tool_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            app:keyType="tools"
+            android:background="@drawable/tool_keybutton_background"
+            android:textColor="@color/steelblue"
+            android:layout_weight="1"
+            android:id="@+id/tool_expression"
+            android:fontFamily="@font/icons"
+            android:text="@string/ic_expression"
+            android:textSize="@dimen/tool_view_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="@dimen/tool_divider_margin"
+            android:layout_marginBottom="@dimen/tool_divider_margin"
+            android:background="@android:color/darker_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            app:keyType="tools"
+            android:background="@drawable/tool_keybutton_background"
+            android:textColor="@color/steelblue"
+            android:layout_weight="1"
+            android:id="@+id/tool_voice"
+            android:fontFamily="@font/icons"
+            android:textSize="@dimen/tool_view_text_size"
+            android:text="@string/ic_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="@dimen/tool_divider_margin"
+            android:layout_marginBottom="@dimen/tool_divider_margin"
+            android:background="@android:color/darker_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            app:keyType="tools"
+            android:background="@drawable/tool_keybutton_background"
+            android:textColor="@color/steelblue"
+            android:layout_weight="1"
+            android:fontFamily="@font/icons"
+            android:textSize="@dimen/tool_view_text_size"
+            android:text="@string/ic_settings"
+            android:id="@+id/tool_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="@dimen/tool_divider_margin"
+            android:layout_marginBottom="@dimen/tool_divider_margin"
+            android:background="@android:color/darker_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            app:keyType="tools"
+            android:background="@drawable/tool_keybutton_background"
+            android:textColor="@color/steelblue"
+            android:layout_weight="1"
+            android:id="@+id/tool_caret"
+            android:fontFamily="@font/icons"
+            android:textSize="@dimen/tool_view_text_size"
+            android:text="@string/ic_caret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="@dimen/tool_divider_margin"
+            android:layout_marginBottom="@dimen/tool_divider_margin"
+            android:background="@android:color/darker_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            app:keyType="tools"
+            android:background="@drawable/tool_keybutton_background"
+            android:textColor="@color/steelblue"
+            android:layout_weight="1"
+            android:id="@+id/tool_keyboard"
+            android:fontFamily="@font/icons"
+            android:textSize="@dimen/tool_view_text_size"
+            android:text="@string/ic_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="@dimen/tool_divider_margin"
+            android:layout_marginBottom="@dimen/tool_divider_margin"
+            android:background="@android:color/darker_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            app:keyType="tools"
+            android:textSize="@dimen/tool_view_text_size"
+            android:background="@drawable/tool_keybutton_background"
+            android:textColor="@color/steelblue"
+            android:layout_weight="1"
+            android:text="@string/ic_fold"
+            android:id="@+id/tool_fold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/icons"/>
+    </LinearLayout>
+
+    <!--候选栏-->
+    <LinearLayout
+        android:id="@+id/candidate_ll"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:divider="?android:listDivider"
+        android:gravity="center">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/candidate_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.example.lgh.simpleinputmethod.custom.Keybutton
+            android:gravity="center"
+            android:textColor="@color/steelblue"
+            android:fontFamily="@font/icons"
+            android:background="@drawable/tool_keybutton_background"
+            android:textSize="@dimen/tool_view_text_size"
+            android:id="@+id/cancel_candidate_tv"
+            android:text="@string/ic_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:keyType="tools"/>
+    </LinearLayout>
+
+    <com.example.lgh.simpleinputmethod.custom.SimpleInputMethodKeyboardView
+        android:id="@+id/keyboard_kv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.lgh.simpleinputmethod.custom.SimpleInputMethodKeyboardView>
+</LinearLayout>

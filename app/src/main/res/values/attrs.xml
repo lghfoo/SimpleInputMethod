@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Keybutton">
+        <attr name="keyType" format="enum">
+            <enum name="delete" value="0"/>
+            <enum name="newline" value="1"/>
+            <enum name="to_number" value="2"/>
+            <enum name="to_symbol" value="3"/>
+            <enum name="return_back" value="4"/>
+            <enum name="shift" value="5"/>
+            <enum name="toggle_ec" value="6"/>
+            <enum name="letter" value="7"/>
+            <enum name="digit" value="8"/>
+            <enum name="symbol" value="9"/>
+            <enum name="space" value="10"/>
+            <enum name="tools" value="11"/>
+            <enum name="lock" value="12"/>
+            <enum name="symbol_type" value="13"/>
+        </attr>
+        <attr name="useXmlSize" format="boolean"/>
+        <attr name="android:background"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+    </declare-styleable>
+</resources>
